@@ -61,6 +61,26 @@ export default function App() {
       display: "flex",
       flexDirection: "column"
     }}>
+      <div style={{
+        textAlign: "center",
+        marginBottom: "24px",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: "12px"
+      }}>
+        <img 
+          src="https://raw.githubusercontent.com/akniyet155/logo/main/logo1.jpg"
+          alt="IPTV Logo"
+          style={{
+            width: "80px",
+            height: "80px",
+            borderRadius: "12px",
+            boxShadow: "0 8px 24px rgba(102, 126, 234, 0.4)"
+          }}
+        />
+        <h1 style={{ margin: 0 }}>{t("appTitle")}</h1>
+      </div>
       {user && isMiniApp && (
         <div style={{
           fontSize: "13px",
@@ -77,7 +97,6 @@ export default function App() {
           👋 {user.first_name}
         </div>
       )}
-      <h1>{t("appTitle")}</h1>
       
       <div className="app-container">
         <div className="filters-container">
