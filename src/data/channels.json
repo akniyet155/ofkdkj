@@ -289,30 +289,6 @@
   },
   {
     "id": "37",
-    "name": { "en": "HBO", "ru": "HBO" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCrDkAvwh-_-lRFW_FdpCHsA.m3u8",
-    "logo": "/logos/hbo.png"
-  },
-  {
-    "id": "38",
-    "name": { "en": "Showtime", "ru": "Showtime" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCeR1zDa-rVqC7GYT4bMa0VA.m3u8",
-    "logo": "/logos/showtime.png"
-  },
-  {
-    "id": "39",
-    "name": { "en": "Starz", "ru": "Starz" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCm8SHjD8mUOTh8KdqVYWUxw.m3u8",
-    "logo": "/logos/starz.png"
-  },
-  {
-    "id": "40",
     "name": { "en": "BBC One", "ru": "BBC One" },
     "country": "UK",
     "genres": ["Entertainment"],
@@ -320,7 +296,7 @@
     "logo": "/logos/bbcone.png"
   },
   {
-    "id": "41",
+    "id": "38",
     "name": { "en": "ITV", "ru": "ITV" },
     "country": "UK",
     "genres": ["Entertainment"],
@@ -328,35 +304,11 @@
     "logo": "/logos/itv.png"
   },
   {
-    "id": "42",
+    "id": "39",
     "name": { "en": "Channel 4", "ru": "Channel 4" },
     "country": "UK",
     "genres": ["Entertainment"],
     "url": "https://ythls.armelin.one/channel/UCpBhbF6VB4FZl7sO1YGOm5g.m3u8",
     "logo": "/logos/ch4.png"
-  },
-  {
-    "id": "43",
-    "name": { "en": "Netflix", "ru": "Netflix" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCWd6xuzAg-0MIjIqmfYBJjg.m3u8",
-    "logo": "/logos/netflix.png"
-  },
-  {
-    "id": "44",
-    "name": { "en": "Amazon Prime", "ru": "Amazon Prime" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCEQ7TiLxX8CmKgrKcqBPqAA.m3u8",
-    "logo": "/logos/amazon.png"
-  },
-  {
-    "id": "45",
-    "name": { "en": "Apple TV", "ru": "Apple TV" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UC1U3__3ug8BhJqBJvEBoTTA.m3u8",
-    "logo": "/logos/appletv.png"
   }
 ]
