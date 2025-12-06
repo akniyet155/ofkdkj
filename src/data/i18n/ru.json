@@ -6,5 +6,6 @@
   "all": "Все",
   "noChannels": "Каналы не найдены",
   "playerError": "Не удается воспроизвести поток",
-  "selectChannelHint": "Выберите канал для просмотра"
+  "selectChannelHint": "Выберите канал для просмотра",
+  "totalChannels": "каналов доступно"
 }

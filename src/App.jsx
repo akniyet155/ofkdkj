@@ -96,6 +96,17 @@ export default function App() {
             flex: isMiniApp ? "none" : 1,
             minHeight: isMiniApp ? "200px" : "auto"
           }}>
+            {filtered.length > 0 && (
+              <div style={{
+                textAlign: 'center',
+                fontSize: '14px',
+                color: 'var(--text-secondary)',
+                marginBottom: '16px',
+                fontWeight: '500'
+              }}>
+                {filtered.length} {t("totalChannels")}
+              </div>
+            )}
             <ChannelList channels={filtered} onSelect={handleChannelSelect} t={t} lang={lang} />
           </div>
           <div style={{

@@ -1,34 +1,122 @@
 [
   {
     "id": "1",
-    "name": { "en": "First Channel", "ru": "Первый канал" },
+    "name": { "en": "RT News", "ru": "RT Новости" },
     "country": "RU",
-    "genres": ["News", "General"],
-    "url": "http://example.com/stream1.m3u8",
-    "logo": "/logos/ru1.png"
+    "genres": ["News"],
+    "url": "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8",
+    "logo": "/logos/rt.png"
   },
   {
     "id": "2",
-    "name": { "en": "ZDF", "ru": "ZDF" },
-    "country": "DE",
-    "genres": ["News", "General"],
-    "url": "http://example.com/stream2.m3u8",
-    "logo": "/logos/de1.png"
+    "name": { "en": "France 24 English", "ru": "France 24 английский" },
+    "country": "FR",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg.m3u8",
+    "logo": "/logos/france24.png"
   },
   {
     "id": "3",
-    "name": { "en": "BBC One", "ru": "BBC One" },
-    "country": "UK",
-    "genres": ["Entertainment", "General"],
-    "url": "http://example.com/stream3.m3u8",
-    "logo": "/logos/uk1.png"
+    "name": { "en": "Euronews", "ru": "Euronews" },
+    "country": "FR",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCSrZ3UV4jOidv8ppoVuvW9Q.m3u8",
+    "logo": "/logos/euronews.png"
   },
   {
     "id": "4",
-    "name": { "en": "France 3", "ru": "France 3" },
+    "name": { "en": "DW English", "ru": "DW на английском" },
+    "country": "DE",
+    "genres": ["News"],
+    "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
+    "logo": "/logos/dw.png"
+  },
+  {
+    "id": "5",
+    "name": { "en": "Al Jazeera English", "ru": "Аль-Джазира" },
+    "country": "UK",
+    "genres": ["News"],
+    "url": "https://live-hls-web-aje.getaj.net/AJE/index.m3u8",
+    "logo": "/logos/aljazeera.png"
+  },
+  {
+    "id": "6",
+    "name": { "en": "BBC News", "ru": "BBC Новости" },
+    "country": "UK",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UC16niRr50-MSBwiO3JLXTwg.m3u8",
+    "logo": "/logos/bbc.png"
+  },
+  {
+    "id": "7",
+    "name": { "en": "CNN International", "ru": "CNN Международный" },
+    "country": "US",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCupvZG-5ko_eiXAupbDfxWw.m3u8",
+    "logo": "/logos/cnn.png"
+  },
+  {
+    "id": "8",
+    "name": { "en": "CGTN", "ru": "CGTN" },
+    "country": "CN",
+    "genres": ["News"],
+    "url": "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8",
+    "logo": "/logos/cgtn.png"
+  },
+  {
+    "id": "9",
+    "name": { "en": "Bloomberg TV", "ru": "Bloomberg TV" },
+    "country": "US",
+    "genres": ["Business", "News"],
+    "url": "https://bloomberg-bloombergtv-1-gb.samsung.wurl.tv/playlist.m3u8",
+    "logo": "/logos/bloomberg.png"
+  },
+  {
+    "id": "10",
+    "name": { "en": "NDTV 24x7", "ru": "NDTV 24x7" },
+    "country": "IN",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCZFMm1mMw0F81Z37aaEzTUA.m3u8",
+    "logo": "/logos/ndtv.png"
+  },
+  {
+    "id": "11",
+    "name": { "en": "NASA TV", "ru": "NASA TV" },
+    "country": "US",
+    "genres": ["Documentary", "Science"],
+    "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
+    "logo": "/logos/nasa.png"
+  },
+  {
+    "id": "12",
+    "name": { "en": "Red Bull TV", "ru": "Red Bull TV" },
+    "country": "AT",
+    "genres": ["Sports", "Entertainment"],
+    "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
+    "logo": "/logos/redbull.png"
+  },
+  {
+    "id": "13",
+    "name": { "en": "Fashion TV", "ru": "Fashion TV" },
     "country": "FR",
-    "genres": ["Entertainment", "General"],
-    "url": "http://example.com/stream4.m3u8",
-    "logo": "/logos/fr1.png"
+    "genres": ["Fashion", "Entertainment"],
+    "url": "https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8",
+    "logo": "/logos/fashiontv.png"
+  },
+  {
+    "id": "14",
+    "name": { "en": "Tastemade", "ru": "Tastemade" },
+    "country": "US",
+    "genres": ["Cooking", "Lifestyle"],
+    "url": "https://tastemade-en16intl-samsunguk.amagi.tv/playlist.m3u8",
+    "logo": "/logos/tastemade.png"
+  },
+  {
+    "id": "15",
+    "name": { "en": "Travel XP", "ru": "Travel XP" },
+    "country": "IN",
+    "genres": ["Travel", "Documentary"],
+    "url": "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8",
+    "logo": "/logos/travelxp.png"
   }
 ]
