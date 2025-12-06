@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": { "en": "First Channel", "ru": "Первый канал" },
+    "country": "RU",
+    "genres": ["News", "General"],
+    "url": "http://example.com/stream1.m3u8",
+    "logo": "/logos/ru1.png"
+  },
+  {
+    "id": "2",
+    "name": { "en": "ZDF", "ru": "ZDF" },
+    "country": "DE",
+    "genres": ["News", "General"],
+    "url": "http://example.com/stream2.m3u8",
+    "logo": "/logos/de1.png"
+  },
+  {
+    "id": "3",
+    "name": { "en": "BBC One", "ru": "BBC One" },
+    "country": "UK",
+    "genres": ["Entertainment", "General"],
+    "url": "http://example.com/stream3.m3u8",
+    "logo": "/logos/uk1.png"
+  },
+  {
+    "id": "4",
+    "name": { "en": "France 3", "ru": "France 3" },
+    "country": "FR",
+    "genres": ["Entertainment", "General"],
+    "url": "http://example.com/stream4.m3u8",
+    "logo": "/logos/fr1.png"
+  }
+]

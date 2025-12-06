@@ -1,0 +1,9 @@
+{
+  "appTitle": "IPTV Плеер",
+  "selectLanguage": "Язык",
+  "selectCountry": "Страна",
+  "selectGenre": "Жанр",
+  "all": "Все",
+  "noChannels": "Каналы не найдены",
+  "playerError": "Не удается воспроизвести поток"
+}

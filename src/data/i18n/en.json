@@ -1,0 +1,9 @@
+{
+  "appTitle": "IPTV Player",
+  "selectLanguage": "Select Language",
+  "selectCountry": "Select Country",
+  "selectGenre": "Select Genre",
+  "all": "All",
+  "noChannels": "No channels found",
+  "playerError": "Can't play this stream"
+}
