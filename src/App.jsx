@@ -6,6 +6,8 @@ import { useTelegram } from "./hooks/useTelegram";
 import LanguageSelector from "./components/LanguageSelector";
 import CountryFilter from "./components/CountryFilter";
 import GenreFilter from "./components/GenreFilter";
+import SearchBar from "./components/SearchBar";
+import FavoriteButton from "./components/FavoriteButton";
 import ChannelList from "./components/ChannelList";
 import Player from "./components/Player";
 
@@ -17,17 +19,44 @@ export default function App() {
   const [lang, setLang] = useState("en");
   const [country, setCountry] = useState("all");
   const [genre, setGenre] = useState("all");
+  const [search, setSearch] = useState("");
   const [current, setCurrent] = useState(null);
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem("darkMode") === "true");
+  const [favorites, setFavorites] = useState(() => {
+    try {
+      return JSON.parse(localStorage.getItem("favorites") || "[]");
+    } catch {
+      return [];
+    }
+  });
+  const [autoOffTimer, setAutoOffTimer] = useState(null);
 
   const t = (key) => translations[lang][key] || key;
 
   useEffect(() => {
+    localStorage.setItem("darkMode", isDarkMode);
+    document.body.classList.toggle("telegram-dark", isDarkMode);
+  }, [isDarkMode]);
+
+  useEffect(() => {
     if (tg) {
       setIsDarkMode(tg.isDarkMode);
-      document.body.classList.toggle("telegram-dark", tg.isDarkMode);
     }
   }, [tg]);
+
+  useEffect(() => {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
+
+  useEffect(() => {
+    if (autoOffTimer) {
+      const timer = setTimeout(() => {
+        setCurrent(null);
+        setAutoOffTimer(null);
+      }, autoOffTimer * 60 * 1000);
+      return () => clearTimeout(timer);
+    }
+  }, [autoOffTimer, current]);
 
   const countries = useMemo(
     () => [...new Set(channelsData.map(c => c.country))], []
@@ -40,9 +69,11 @@ export default function App() {
     () => channelsData.filter(
       c =>
         (country === "all" || c.country === country) &&
-        (genre === "all" || c.genres.includes(genre))
+        (genre === "all" || c.genres.includes(genre)) &&
+        (search === "" || c.name.en.toLowerCase().includes(search.toLowerCase()) || 
+         c.name.ru.toLowerCase().includes(search.toLowerCase()))
     ),
-    [country, genre]
+    [country, genre, search]
   );
 
   const handleChannelSelect = (ch) => {
@@ -52,6 +83,14 @@ export default function App() {
     }
   };
 
+  const toggleFavorite = (channelId) => {
+    setFavorites(prev =>
+      prev.includes(channelId)
+        ? prev.filter(id => id !== channelId)
+        : [...prev, channelId]
+    );
+  };
+
   return (
     <div style={{
       padding: isMiniApp ? "16px" : "24px",
@@ -59,7 +98,8 @@ export default function App() {
       margin: "auto",
       minHeight: "100vh",
       display: "flex",
-      flexDirection: "column"
+      flexDirection: "column",
+      background: isDarkMode ? "#0f0f1e" : "linear-gradient(135deg, #667eea 0%, #764ba2 100%)"
     }}>
       <div style={{
         textAlign: "center",
@@ -99,11 +139,66 @@ export default function App() {
       )}
       
       <div className="app-container">
+        <div style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          marginBottom: "16px",
+          gap: "12px",
+          flexWrap: "wrap"
+        }}>
+          <div style={{ flex: 1, minWidth: "200px" }}>
+            <LanguageSelector current={lang} onChange={setLang} languages={languages} />
+          </div>
+          <button
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            style={{
+              background: isDarkMode ? "rgba(102, 126, 234, 0.8)" : "rgba(255, 255, 255, 0.2)",
+              border: "none",
+              color: "#fff",
+              padding: "10px 16px",
+              borderRadius: "12px",
+              cursor: "pointer",
+              fontSize: "16px",
+              fontWeight: "600",
+              backdropFilter: "blur(10px)",
+              transition: "all 0.3s ease"
+            }}
+            onMouseEnter={(e) => e.target.style.background = isDarkMode ? "rgba(102, 126, 234, 1)" : "rgba(255, 255, 255, 0.3)"}
+            onMouseLeave={(e) => e.target.style.background = isDarkMode ? "rgba(102, 126, 234, 0.8)" : "rgba(255, 255, 255, 0.2)"}
+          >
+            {isDarkMode ? "☀️" : "🌙"}
+          </button>
+        </div>
+
         <div className="filters-container">
-          <LanguageSelector current={lang} onChange={setLang} languages={languages} />
           <CountryFilter countries={countries} current={country} onChange={setCountry} t={t} />
           <GenreFilter genres={genres} current={genre} onChange={setGenre} t={t} />
+          <select
+            value={autoOffTimer || ""}
+            onChange={(e) => setAutoOffTimer(e.target.value ? parseInt(e.target.value) : null)}
+            style={{
+              padding: "10px 12px",
+              borderRadius: "12px",
+              border: "2px solid var(--border-color)",
+              background: "var(--bg-card)",
+              color: "var(--text-primary)",
+              fontSize: "14px",
+              fontWeight: "500",
+              cursor: "pointer",
+              outline: "none",
+              backdropFilter: "blur(10px)"
+            }}
+          >
+            <option value="">⏱️ Timer</option>
+            <option value="15">15 min</option>
+            <option value="30">30 min</option>
+            <option value="60">60 min</option>
+            <option value="120">2 hours</option>
+          </select>
         </div>
+
+        <SearchBar value={search} onChange={setSearch} t={t} />
         
         <div style={{
           display: isMiniApp ? 'flex' : 'flex',
@@ -123,17 +218,39 @@ export default function App() {
                 marginBottom: '16px',
                 fontWeight: '500'
               }}>
-                {filtered.length} {t("totalChannels")}
+                {filtered.length} {t("totalChannels")} {favorites.length > 0 && `⭐ ${favorites.length} избранных`}
               </div>
             )}
-            <ChannelList channels={filtered} onSelect={handleChannelSelect} t={t} lang={lang} />
+            <ChannelList 
+              channels={filtered} 
+              onSelect={handleChannelSelect} 
+              t={t} 
+              lang={lang}
+              renderExtra={(channel) => (
+                <FavoriteButton 
+                  channel={channel} 
+                  isFavorite={favorites.includes(channel.id)} 
+                  onToggle={toggleFavorite}
+                />
+              )}
+            />
           </div>
           <div style={{
             flex: isMiniApp ? "none" : 2,
             minHeight: isMiniApp ? "300px" : "auto"
           }}>
             {current ? (
-              <Player url={current.url} t={t} />
+              <div>
+                <Player url={current.url} t={t} />
+                <div style={{
+                  marginTop: '16px',
+                  textAlign: 'center',
+                  color: 'var(--text-secondary)',
+                  fontSize: '12px'
+                }}>
+                  {autoOffTimer && `⏱️ Автоотключение через ${autoOffTimer} мин`}
+                </div>
+              </div>
             ) : (
               <div style={{
                 background: 'var(--bg-card)',

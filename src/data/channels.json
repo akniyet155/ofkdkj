@@ -118,5 +118,245 @@
     "genres": ["Travel", "Documentary"],
     "url": "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8",
     "logo": "/logos/travelxp.png"
+  },
+  {
+    "id": "16",
+    "name": { "en": "Sky News", "ru": "Sky News" },
+    "country": "UK",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCtN8hc0R4NxzY2CjNFb8d_Q.m3u8",
+    "logo": "/logos/skynews.png"
+  },
+  {
+    "id": "17",
+    "name": { "en": "ABC News", "ru": "ABC News" },
+    "country": "US",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCBi2mrWuNuyYy4gbM6fU18Q.m3u8",
+    "logo": "/logos/abcnews.png"
+  },
+  {
+    "id": "18",
+    "name": { "en": "National Geographic", "ru": "National Geographic" },
+    "country": "US",
+    "genres": ["Documentary", "Science"],
+    "url": "https://natgeotv-natgeotv-1-eu.rakuten.wurl.tv/playlist.m3u8",
+    "logo": "/logos/natgeo.png"
+  },
+  {
+    "id": "19",
+    "name": { "en": "Discovery", "ru": "Discovery" },
+    "country": "US",
+    "genres": ["Documentary", "Science"],
+    "url": "https://disco-dhls.akamaized.net/hls/live/2102658/discointl/index.m3u8",
+    "logo": "/logos/discovery.png"
+  },
+  {
+    "id": "20",
+    "name": { "en": "Animal Planet", "ru": "Animal Planet" },
+    "country": "US",
+    "genres": ["Documentary", "Science"],
+    "url": "https://ythls.armelin.one/channel/UCpKZ1Iy9HKzRIZLQsQBUzrg.m3u8",
+    "logo": "/logos/animalplanet.png"
+  },
+  {
+    "id": "21",
+    "name": { "en": "History Channel", "ru": "History Channel" },
+    "country": "US",
+    "genres": ["Documentary", "Entertainment"],
+    "url": "https://ythls.armelin.one/channel/UCExQKzN4gPw3YHBGpGPy1MQ.m3u8",
+    "logo": "/logos/history.png"
+  },
+  {
+    "id": "22",
+    "name": { "en": "TLC", "ru": "TLC" },
+    "country": "US",
+    "genres": ["Entertainment", "Lifestyle"],
+    "url": "https://ythls.armelin.one/channel/UCLtLumMaMuKJaNlqHq5WCKA.m3u8",
+    "logo": "/logos/tlc.png"
+  },
+  {
+    "id": "23",
+    "name": { "en": "MTV", "ru": "MTV" },
+    "country": "US",
+    "genres": ["Entertainment", "Music"],
+    "url": "https://ythls.armelin.one/channel/UCMZSL-n3-TBG30oaR_NFhBA.m3u8",
+    "logo": "/logos/mtv.png"
+  },
+  {
+    "id": "24",
+    "name": { "en": "ESPN", "ru": "ESPN" },
+    "country": "US",
+    "genres": ["Sports"],
+    "url": "https://ythls.armelin.one/channel/UCRzta2t07D-T7bWH_3aWLew.m3u8",
+    "logo": "/logos/espn.png"
+  },
+  {
+    "id": "25",
+    "name": { "en": "Sky Sports", "ru": "Sky Sports" },
+    "country": "UK",
+    "genres": ["Sports"],
+    "url": "https://ythls.armelin.one/channel/UCxhVdJiO9gCVdQFMh5LDC-g.m3u8",
+    "logo": "/logos/skysports.png"
+  },
+  {
+    "id": "26",
+    "name": { "en": "Eurosport", "ru": "Eurosport" },
+    "country": "FR",
+    "genres": ["Sports"],
+    "url": "https://ythls.armelin.one/channel/UCP5jtglpPf2QBCQGVFM-kag.m3u8",
+    "logo": "/logos/eurosport.png"
+  },
+  {
+    "id": "27",
+    "name": { "en": "DAZN", "ru": "DAZN" },
+    "country": "DE",
+    "genres": ["Sports"],
+    "url": "https://ythls.armelin.one/channel/UCdwxIkKqBFKDYgVsJ0wgSbw.m3u8",
+    "logo": "/logos/dazn.png"
+  },
+  {
+    "id": "28",
+    "name": { "en": "Food Network", "ru": "Food Network" },
+    "country": "US",
+    "genres": ["Cooking", "Entertainment"],
+    "url": "https://ythls.armelin.one/channel/UCbmNph75x7Su-S-GLXEt-2w.m3u8",
+    "logo": "/logos/foodnet.png"
+  },
+  {
+    "id": "29",
+    "name": { "en": "BBC World", "ru": "BBC World" },
+    "country": "UK",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCVYU1E5i7GpCwCwPvyE4rXg.m3u8",
+    "logo": "/logos/bbcworld.png"
+  },
+  {
+    "id": "30",
+    "name": { "en": "MSNBC", "ru": "MSNBC" },
+    "country": "US",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCaLlzGqiREE3_Y9K8D0XaGQ.m3u8",
+    "logo": "/logos/msnbc.png"
+  },
+  {
+    "id": "31",
+    "name": { "en": "FOX News", "ru": "FOX News" },
+    "country": "US",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCXIJgqnII2ZODsHXUIEJKSA.m3u8",
+    "logo": "/logos/foxnews.png"
+  },
+  {
+    "id": "32",
+    "name": { "en": "NHK World", "ru": "NHK World" },
+    "country": "JP",
+    "genres": ["News"],
+    "url": "https://ythls.armelin.one/channel/UCKjJ4bCQxg_Z77-nM6iaSrA.m3u8",
+    "logo": "/logos/nhk.png"
+  },
+  {
+    "id": "33",
+    "name": { "en": "Cartoon Network", "ru": "Cartoon Network" },
+    "country": "US",
+    "genres": ["Entertainment", "Kids"],
+    "url": "https://ythls.armelin.one/channel/UCj8D9C__m7liqfAI3oNAcxQ.m3u8",
+    "logo": "/logos/cartoon.png"
+  },
+  {
+    "id": "34",
+    "name": { "en": "Disney", "ru": "Disney" },
+    "country": "US",
+    "genres": ["Entertainment", "Kids"],
+    "url": "https://ythls.armelin.one/channel/UCKjtG1_p6bKvR8RNT7CYlEA.m3u8",
+    "logo": "/logos/disney.png"
+  },
+  {
+    "id": "35",
+    "name": { "en": "Comedy Central", "ru": "Comedy Central" },
+    "country": "US",
+    "genres": ["Entertainment", "Comedy"],
+    "url": "https://ythls.armelin.one/channel/UCUsLMYc82Xcw8trw-7gjyUw.m3u8",
+    "logo": "/logos/comedy.png"
+  },
+  {
+    "id": "36",
+    "name": { "en": "AMC", "ru": "AMC" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCu4MdqNQfvQzpKVc7-ZdxKQ.m3u8",
+    "logo": "/logos/amc.png"
+  },
+  {
+    "id": "37",
+    "name": { "en": "HBO", "ru": "HBO" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCrDkAvwh-_-lRFW_FdpCHsA.m3u8",
+    "logo": "/logos/hbo.png"
+  },
+  {
+    "id": "38",
+    "name": { "en": "Showtime", "ru": "Showtime" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCeR1zDa-rVqC7GYT4bMa0VA.m3u8",
+    "logo": "/logos/showtime.png"
+  },
+  {
+    "id": "39",
+    "name": { "en": "Starz", "ru": "Starz" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCm8SHjD8mUOTh8KdqVYWUxw.m3u8",
+    "logo": "/logos/starz.png"
+  },
+  {
+    "id": "40",
+    "name": { "en": "BBC One", "ru": "BBC One" },
+    "country": "UK",
+    "genres": ["Entertainment"],
+    "url": "https://ythls.armelin.one/channel/UCOW_G3WlXPwXGYl_-fy7C0w.m3u8",
+    "logo": "/logos/bbcone.png"
+  },
+  {
+    "id": "41",
+    "name": { "en": "ITV", "ru": "ITV" },
+    "country": "UK",
+    "genres": ["Entertainment"],
+    "url": "https://ythls.armelin.one/channel/UCUW3VfbVY7AKW6y6ot3oOiw.m3u8",
+    "logo": "/logos/itv.png"
+  },
+  {
+    "id": "42",
+    "name": { "en": "Channel 4", "ru": "Channel 4" },
+    "country": "UK",
+    "genres": ["Entertainment"],
+    "url": "https://ythls.armelin.one/channel/UCpBhbF6VB4FZl7sO1YGOm5g.m3u8",
+    "logo": "/logos/ch4.png"
+  },
+  {
+    "id": "43",
+    "name": { "en": "Netflix", "ru": "Netflix" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCWd6xuzAg-0MIjIqmfYBJjg.m3u8",
+    "logo": "/logos/netflix.png"
+  },
+  {
+    "id": "44",
+    "name": { "en": "Amazon Prime", "ru": "Amazon Prime" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UCEQ7TiLxX8CmKgrKcqBPqAA.m3u8",
+    "logo": "/logos/amazon.png"
+  },
+  {
+    "id": "45",
+    "name": { "en": "Apple TV", "ru": "Apple TV" },
+    "country": "US",
+    "genres": ["Entertainment", "Drama"],
+    "url": "https://ythls.armelin.one/channel/UC1U3__3ug8BhJqBJvEBoTTA.m3u8",
+    "logo": "/logos/appletv.png"
   }
 ]
