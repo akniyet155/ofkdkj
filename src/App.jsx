@@ -54,8 +54,8 @@ export default function App() {
 
   return (
     <div style={{
-      padding: isMiniApp ? "12px" : "20px",
-      maxWidth: isMiniApp ? "100%" : "700px",
+      padding: isMiniApp ? "16px" : "24px",
+      maxWidth: isMiniApp ? "100%" : "1200px",
       margin: "auto",
       minHeight: "100vh",
       display: "flex",
@@ -63,43 +63,62 @@ export default function App() {
     }}>
       {user && isMiniApp && (
         <div style={{
-          fontSize: "12px",
-          marginBottom: "12px",
-          opacity: 0.7
+          fontSize: "13px",
+          marginBottom: "16px",
+          opacity: 0.9,
+          color: "#ffffff",
+          fontWeight: "500",
+          textAlign: "center",
+          background: "rgba(255, 255, 255, 0.1)",
+          padding: "8px 16px",
+          borderRadius: "12px",
+          backdropFilter: "blur(10px)"
         }}>
-          {t("appTitle")} • {user.first_name}
+          👋 {user.first_name}
         </div>
       )}
       <h1>{t("appTitle")}</h1>
-      <div style={{
-        display: 'flex',
-        gap: isMiniApp ? "6px" : "8px",
-        marginBottom: "16px",
-        flexWrap: "wrap"
-      }}>
-        <LanguageSelector current={lang} onChange={setLang} languages={languages} />
-        <CountryFilter countries={countries} current={country} onChange={setCountry} t={t} />
-        <GenreFilter genres={genres} current={genre} onChange={setGenre} t={t} />
-      </div>
-      <div style={{
-        display: isMiniApp ? 'flex' : 'flex',
-        flexDirection: isMiniApp ? 'column' : 'row',
-        gap: isMiniApp ? "12px" : "16px",
-        flex: 1
-      }}>
-        <div style={{
-          flex: isMiniApp ? "none" : 2,
-          minHeight: isMiniApp ? "200px" : "auto",
-          overflowY: "auto",
-          maxHeight: isMiniApp ? "40vh" : "auto"
-        }}>
-          <ChannelList channels={filtered} onSelect={handleChannelSelect} t={t} lang={lang} />
+      
+      <div className="app-container">
+        <div className="filters-container">
+          <LanguageSelector current={lang} onChange={setLang} languages={languages} />
+          <CountryFilter countries={countries} current={country} onChange={setCountry} t={t} />
+          <GenreFilter genres={genres} current={genre} onChange={setGenre} t={t} />
         </div>
+        
         <div style={{
-          flex: isMiniApp ? "none" : 3,
-          minHeight: isMiniApp ? "300px" : "auto"
+          display: isMiniApp ? 'flex' : 'flex',
+          flexDirection: isMiniApp ? 'column' : 'row',
+          gap: "24px",
+          flex: 1
         }}>
-          {current && <Player url={current.url} t={t} />}
+          <div className="channel-list-container" style={{
+            flex: isMiniApp ? "none" : 1,
+            minHeight: isMiniApp ? "200px" : "auto"
+          }}>
+            <ChannelList channels={filtered} onSelect={handleChannelSelect} t={t} lang={lang} />
+          </div>
+          <div style={{
+            flex: isMiniApp ? "none" : 2,
+            minHeight: isMiniApp ? "300px" : "auto"
+          }}>
+            {current ? (
+              <Player url={current.url} t={t} />
+            ) : (
+              <div style={{
+                background: 'var(--bg-card)',
+                borderRadius: '20px',
+                padding: '48px 24px',
+                textAlign: 'center',
+                border: '2px dashed var(--border-color)',
+                color: 'var(--text-secondary)',
+                fontSize: '16px',
+                fontWeight: '500'
+              }}>
+                📺 {t("selectChannelHint") || "Выберите канал для просмотра"}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
