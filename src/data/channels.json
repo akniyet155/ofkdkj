@@ -1,313 +1,241 @@
 [
   {
     "id": "1",
-    "name": { "en": "RT News", "ru": "RT –ù–æ–≤–æ—Å—Ç–∏" },
+    "name": {
+      "en": "RT News",
+      "ru": "RT Ó‚ÓÒÚË"
+    },
     "country": "RU",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://rt-glb.rttv.com/live/rtnews/playlist.m3u8",
     "logo": "/logos/rt.png"
   },
   {
-    "id": "2",
-    "name": { "en": "France 24 English", "ru": "France 24 –∞–Ω–≥–ª–∏–π—Å–∫–∏–π" },
-    "country": "FR",
-    "genres": ["News"],
-    "url": "https://ythls.armelin.one/channel/UCQfwfsi5VrQ8yKZ-UWmAEFg.m3u8",
-    "logo": "/logos/france24.png"
-  },
-  {
     "id": "3",
-    "name": { "en": "Euronews", "ru": "Euronews" },
+    "name": {
+      "en": "Euronews",
+      "ru": "Euronews"
+    },
     "country": "FR",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UCSrZ3UV4jOidv8ppoVuvW9Q.m3u8",
     "logo": "/logos/euronews.png"
   },
   {
     "id": "4",
-    "name": { "en": "DW English", "ru": "DW –Ω–∞ –∞–Ω–≥–ª–∏–π—Å–∫–æ–º" },
+    "name": {
+      "en": "DW English",
+      "ru": "DW Ì‡ ‡Ì„ÎËÈÒÍÓÏ"
+    },
     "country": "DE",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://dwamdstream102.akamaized.net/hls/live/2015525/dwstream102/index.m3u8",
     "logo": "/logos/dw.png"
   },
   {
-    "id": "5",
-    "name": { "en": "Al Jazeera English", "ru": "–ê–ª—å-–î–∂–∞–∑–∏—Ä–∞" },
-    "country": "UK",
-    "genres": ["News"],
-    "url": "https://live-hls-web-aje.getaj.net/AJE/index.m3u8",
-    "logo": "/logos/aljazeera.png"
-  },
-  {
     "id": "6",
-    "name": { "en": "BBC News", "ru": "BBC –ù–æ–≤–æ—Å—Ç–∏" },
+    "name": {
+      "en": "BBC News",
+      "ru": "BBC Ó‚ÓÒÚË"
+    },
     "country": "UK",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UC16niRr50-MSBwiO3JLXTwg.m3u8",
     "logo": "/logos/bbc.png"
   },
   {
     "id": "7",
-    "name": { "en": "CNN International", "ru": "CNN –ú–µ–∂–¥—É–Ω–∞—Ä–æ–¥–Ω—ã–π" },
+    "name": {
+      "en": "CNN International",
+      "ru": "CNN ÂÊ‰ÛÌ‡Ó‰Ì˚È"
+    },
     "country": "US",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UCupvZG-5ko_eiXAupbDfxWw.m3u8",
     "logo": "/logos/cnn.png"
   },
   {
     "id": "8",
-    "name": { "en": "CGTN", "ru": "CGTN" },
+    "name": {
+      "en": "CGTN",
+      "ru": "CGTN"
+    },
     "country": "CN",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://news.cgtn.com/resource/live/english/cgtn-news.m3u8",
     "logo": "/logos/cgtn.png"
   },
   {
-    "id": "9",
-    "name": { "en": "Bloomberg TV", "ru": "Bloomberg TV" },
-    "country": "US",
-    "genres": ["Business", "News"],
-    "url": "https://bloomberg-bloombergtv-1-gb.samsung.wurl.tv/playlist.m3u8",
-    "logo": "/logos/bloomberg.png"
-  },
-  {
-    "id": "10",
-    "name": { "en": "NDTV 24x7", "ru": "NDTV 24x7" },
-    "country": "IN",
-    "genres": ["News"],
-    "url": "https://ythls.armelin.one/channel/UCZFMm1mMw0F81Z37aaEzTUA.m3u8",
-    "logo": "/logos/ndtv.png"
-  },
-  {
     "id": "11",
-    "name": { "en": "NASA TV", "ru": "NASA TV" },
+    "name": {
+      "en": "NASA TV",
+      "ru": "NASA TV"
+    },
     "country": "US",
-    "genres": ["Documentary", "Science"],
+    "genres": [
+      "Documentary",
+      "Science"
+    ],
     "url": "https://ntv1.akamaized.net/hls/live/2014075/NASA-NTV1-HLS/master.m3u8",
     "logo": "/logos/nasa.png"
   },
   {
     "id": "12",
-    "name": { "en": "Red Bull TV", "ru": "Red Bull TV" },
+    "name": {
+      "en": "Red Bull TV",
+      "ru": "Red Bull TV"
+    },
     "country": "AT",
-    "genres": ["Sports", "Entertainment"],
+    "genres": [
+      "Sports",
+      "Entertainment"
+    ],
     "url": "https://rbmn-live.akamaized.net/hls/live/590964/BoRB-AT/master.m3u8",
     "logo": "/logos/redbull.png"
   },
   {
-    "id": "13",
-    "name": { "en": "Fashion TV", "ru": "Fashion TV" },
-    "country": "FR",
-    "genres": ["Fashion", "Entertainment"],
-    "url": "https://fashiontv-fashiontv-1-eu.rakuten.wurl.tv/playlist.m3u8",
-    "logo": "/logos/fashiontv.png"
-  },
-  {
     "id": "14",
-    "name": { "en": "Tastemade", "ru": "Tastemade" },
+    "name": {
+      "en": "Tastemade",
+      "ru": "Tastemade"
+    },
     "country": "US",
-    "genres": ["Cooking", "Lifestyle"],
+    "genres": [
+      "Cooking",
+      "Lifestyle"
+    ],
     "url": "https://tastemade-en16intl-samsunguk.amagi.tv/playlist.m3u8",
     "logo": "/logos/tastemade.png"
   },
   {
     "id": "15",
-    "name": { "en": "Travel XP", "ru": "Travel XP" },
+    "name": {
+      "en": "Travel XP",
+      "ru": "Travel XP"
+    },
     "country": "IN",
-    "genres": ["Travel", "Documentary"],
+    "genres": [
+      "Travel",
+      "Documentary"
+    ],
     "url": "https://travelxp-travelxp-1-eu.rakuten.wurl.tv/playlist.m3u8",
     "logo": "/logos/travelxp.png"
   },
   {
     "id": "16",
-    "name": { "en": "Sky News", "ru": "Sky News" },
+    "name": {
+      "en": "Sky News",
+      "ru": "Sky News"
+    },
     "country": "UK",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UCtN8hc0R4NxzY2CjNFb8d_Q.m3u8",
     "logo": "/logos/skynews.png"
   },
   {
-    "id": "17",
-    "name": { "en": "ABC News", "ru": "ABC News" },
-    "country": "US",
-    "genres": ["News"],
-    "url": "https://ythls.armelin.one/channel/UCBi2mrWuNuyYy4gbM6fU18Q.m3u8",
-    "logo": "/logos/abcnews.png"
-  },
-  {
     "id": "18",
-    "name": { "en": "National Geographic", "ru": "National Geographic" },
+    "name": {
+      "en": "National Geographic",
+      "ru": "National Geographic"
+    },
     "country": "US",
-    "genres": ["Documentary", "Science"],
+    "genres": [
+      "Documentary",
+      "Science"
+    ],
     "url": "https://natgeotv-natgeotv-1-eu.rakuten.wurl.tv/playlist.m3u8",
     "logo": "/logos/natgeo.png"
   },
   {
     "id": "19",
-    "name": { "en": "Discovery", "ru": "Discovery" },
+    "name": {
+      "en": "Discovery",
+      "ru": "Discovery"
+    },
     "country": "US",
-    "genres": ["Documentary", "Science"],
+    "genres": [
+      "Documentary",
+      "Science"
+    ],
     "url": "https://disco-dhls.akamaized.net/hls/live/2102658/discointl/index.m3u8",
     "logo": "/logos/discovery.png"
   },
   {
-    "id": "20",
-    "name": { "en": "Animal Planet", "ru": "Animal Planet" },
-    "country": "US",
-    "genres": ["Documentary", "Science"],
-    "url": "https://ythls.armelin.one/channel/UCpKZ1Iy9HKzRIZLQsQBUzrg.m3u8",
-    "logo": "/logos/animalplanet.png"
-  },
-  {
-    "id": "21",
-    "name": { "en": "History Channel", "ru": "History Channel" },
-    "country": "US",
-    "genres": ["Documentary", "Entertainment"],
-    "url": "https://ythls.armelin.one/channel/UCExQKzN4gPw3YHBGpGPy1MQ.m3u8",
-    "logo": "/logos/history.png"
-  },
-  {
-    "id": "22",
-    "name": { "en": "TLC", "ru": "TLC" },
-    "country": "US",
-    "genres": ["Entertainment", "Lifestyle"],
-    "url": "https://ythls.armelin.one/channel/UCLtLumMaMuKJaNlqHq5WCKA.m3u8",
-    "logo": "/logos/tlc.png"
-  },
-  {
-    "id": "23",
-    "name": { "en": "MTV", "ru": "MTV" },
-    "country": "US",
-    "genres": ["Entertainment", "Music"],
-    "url": "https://ythls.armelin.one/channel/UCMZSL-n3-TBG30oaR_NFhBA.m3u8",
-    "logo": "/logos/mtv.png"
-  },
-  {
-    "id": "24",
-    "name": { "en": "ESPN", "ru": "ESPN" },
-    "country": "US",
-    "genres": ["Sports"],
-    "url": "https://ythls.armelin.one/channel/UCRzta2t07D-T7bWH_3aWLew.m3u8",
-    "logo": "/logos/espn.png"
-  },
-  {
-    "id": "25",
-    "name": { "en": "Sky Sports", "ru": "Sky Sports" },
-    "country": "UK",
-    "genres": ["Sports"],
-    "url": "https://ythls.armelin.one/channel/UCxhVdJiO9gCVdQFMh5LDC-g.m3u8",
-    "logo": "/logos/skysports.png"
-  },
-  {
-    "id": "26",
-    "name": { "en": "Eurosport", "ru": "Eurosport" },
-    "country": "FR",
-    "genres": ["Sports"],
-    "url": "https://ythls.armelin.one/channel/UCP5jtglpPf2QBCQGVFM-kag.m3u8",
-    "logo": "/logos/eurosport.png"
-  },
-  {
-    "id": "27",
-    "name": { "en": "DAZN", "ru": "DAZN" },
-    "country": "DE",
-    "genres": ["Sports"],
-    "url": "https://ythls.armelin.one/channel/UCdwxIkKqBFKDYgVsJ0wgSbw.m3u8",
-    "logo": "/logos/dazn.png"
-  },
-  {
-    "id": "28",
-    "name": { "en": "Food Network", "ru": "Food Network" },
-    "country": "US",
-    "genres": ["Cooking", "Entertainment"],
-    "url": "https://ythls.armelin.one/channel/UCbmNph75x7Su-S-GLXEt-2w.m3u8",
-    "logo": "/logos/foodnet.png"
-  },
-  {
     "id": "29",
-    "name": { "en": "BBC World", "ru": "BBC World" },
+    "name": {
+      "en": "BBC World",
+      "ru": "BBC World"
+    },
     "country": "UK",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UCVYU1E5i7GpCwCwPvyE4rXg.m3u8",
     "logo": "/logos/bbcworld.png"
   },
   {
-    "id": "30",
-    "name": { "en": "MSNBC", "ru": "MSNBC" },
-    "country": "US",
-    "genres": ["News"],
-    "url": "https://ythls.armelin.one/channel/UCaLlzGqiREE3_Y9K8D0XaGQ.m3u8",
-    "logo": "/logos/msnbc.png"
-  },
-  {
-    "id": "31",
-    "name": { "en": "FOX News", "ru": "FOX News" },
-    "country": "US",
-    "genres": ["News"],
-    "url": "https://ythls.armelin.one/channel/UCXIJgqnII2ZODsHXUIEJKSA.m3u8",
-    "logo": "/logos/foxnews.png"
-  },
-  {
     "id": "32",
-    "name": { "en": "NHK World", "ru": "NHK World" },
+    "name": {
+      "en": "NHK World",
+      "ru": "NHK World"
+    },
     "country": "JP",
-    "genres": ["News"],
+    "genres": [
+      "News"
+    ],
     "url": "https://ythls.armelin.one/channel/UCKjJ4bCQxg_Z77-nM6iaSrA.m3u8",
     "logo": "/logos/nhk.png"
   },
   {
-    "id": "33",
-    "name": { "en": "Cartoon Network", "ru": "Cartoon Network" },
-    "country": "US",
-    "genres": ["Entertainment", "Kids"],
-    "url": "https://ythls.armelin.one/channel/UCj8D9C__m7liqfAI3oNAcxQ.m3u8",
-    "logo": "/logos/cartoon.png"
-  },
-  {
-    "id": "34",
-    "name": { "en": "Disney", "ru": "Disney" },
-    "country": "US",
-    "genres": ["Entertainment", "Kids"],
-    "url": "https://ythls.armelin.one/channel/UCKjtG1_p6bKvR8RNT7CYlEA.m3u8",
-    "logo": "/logos/disney.png"
-  },
-  {
-    "id": "35",
-    "name": { "en": "Comedy Central", "ru": "Comedy Central" },
-    "country": "US",
-    "genres": ["Entertainment", "Comedy"],
-    "url": "https://ythls.armelin.one/channel/UCUsLMYc82Xcw8trw-7gjyUw.m3u8",
-    "logo": "/logos/comedy.png"
-  },
-  {
-    "id": "36",
-    "name": { "en": "AMC", "ru": "AMC" },
-    "country": "US",
-    "genres": ["Entertainment", "Drama"],
-    "url": "https://ythls.armelin.one/channel/UCu4MdqNQfvQzpKVc7-ZdxKQ.m3u8",
-    "logo": "/logos/amc.png"
-  },
-  {
     "id": "37",
-    "name": { "en": "BBC One", "ru": "BBC One" },
+    "name": {
+      "en": "BBC One",
+      "ru": "BBC One"
+    },
     "country": "UK",
-    "genres": ["Entertainment"],
+    "genres": [
+      "Entertainment"
+    ],
     "url": "https://ythls.armelin.one/channel/UCOW_G3WlXPwXGYl_-fy7C0w.m3u8",
     "logo": "/logos/bbcone.png"
   },
   {
     "id": "38",
-    "name": { "en": "ITV", "ru": "ITV" },
+    "name": {
+      "en": "ITV",
+      "ru": "ITV"
+    },
     "country": "UK",
-    "genres": ["Entertainment"],
+    "genres": [
+      "Entertainment"
+    ],
     "url": "https://ythls.armelin.one/channel/UCUW3VfbVY7AKW6y6ot3oOiw.m3u8",
     "logo": "/logos/itv.png"
   },
   {
     "id": "39",
-    "name": { "en": "Channel 4", "ru": "Channel 4" },
+    "name": {
+      "en": "Channel 4",
+      "ru": "Channel 4"
+    },
     "country": "UK",
-    "genres": ["Entertainment"],
+    "genres": [
+      "Entertainment"
+    ],
     "url": "https://ythls.armelin.one/channel/UCpBhbF6VB4FZl7sO1YGOm5g.m3u8",
     "logo": "/logos/ch4.png"
   }
